@@ -1,0 +1,27 @@
+{
+  "name": "only-zuul",
+  "version": "1.0.0",
+  "description": "Ghostbusting development errors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynnaloo/only-zuul.git"
+  },
+  "keywords": [
+    "serverless",
+    "ghostbusters"
+  ],
+  "author": "Linda Nichols",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lynnaloo/only-zuul/issues"
+  },
+  "homepage": "https://github.com/lynnaloo/only-zuul#readme",
+  "devDependencies": {
+    "eslint": "^7.26.0"
+  }
+}
