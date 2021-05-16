@@ -4,6 +4,8 @@ Using good development practices and eliminating current and potential bugs is a
 
 ## What this is
 
+>I am the Keymaster ... Are you the Gatekeeper?
+
 This repository illustrates a sample Node.js repository with static code analysis, standardized formatting, and CI/CD pipelines (to multiple cloud platforms) using Github Actions.
 
 ## Setup
@@ -33,4 +35,6 @@ Since these are HTTP services, you can execute them like a REST API
 ```
 http://{generated cloud platform url}/
 ```
+
+>Human sacrifice. Dogs and cats living together. Mass hysteria
 
