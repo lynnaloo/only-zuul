@@ -1,4 +1,4 @@
-# Only Zuul
+# Only Zuul 🙅 👻
 
 Using good development practices and eliminating current and potential bugs is a little like ghostbusting. 
 
