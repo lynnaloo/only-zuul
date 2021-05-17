@@ -4,9 +4,6 @@
 name: Node.js Lint, build, test
 
 on:
-  push:
-    branches-ignore:
-      - master
   pull_request:
     branches: [ main ]
 
