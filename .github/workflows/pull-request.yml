@@ -14,10 +14,10 @@ jobs:
       matrix:
         subfolders: [spengler, venkman]
         os: [macos-latest, windows-latest, ubuntu-20.04]
-        node-version: [12.x, 14.x]
+        node-version: [14.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v2
