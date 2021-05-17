@@ -1,0 +1,45 @@
+# Docs for the AWS Lambda Deploy action: https://github.com/marketplace/actions/aws-lambda-deploy
+
+name: Build and deploy Node.js project to AWS Lambda - spengler
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  LAMBDA_FUNCTION_PATH: './venkman' # set this to the path to your web app project, defaults to the repository root
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - name: 'Checkout GitHub Action'
+      uses: actions/checkout@v2
+
+    - name: Setup Node ${{ matrix.node-version }} Environment
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: 'Resolve Project Dependencies Using Npm'
+      working-directory: ${{ env.LAMBDA_FUNCTION_PATH }}
+        # check that npm dependencies match the lock file and build
+      run: |
+          npm install
+          npm run build --if-present
+
+    - name: 'Run AWS Lambda Source Deploy Action'
+      uses: appleboy/lambda-action@master
+      with:
+        aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws_region: ${{ secrets.AWS_REGION }}
+        function_name: gorush
+        source: venkman/Ecto1/index.js
