@@ -1,6 +1,6 @@
 # Docs for the AWS Lambda Deploy action: https://github.com/marketplace/actions/aws-lambda-deploy
 
-name: Build and deploy Node.js project to AWS Lambda - spengler
+name: AWS Lambda - Build and deploy Node.js project - spengler
 
 on:
   push:
@@ -41,5 +41,5 @@ jobs:
         aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws_region: ${{ secrets.AWS_REGION }}
-        function_name: gorush
+        function_name: Ecto1
         source: venkman/Ecto1/index.js
