@@ -1,7 +1,8 @@
 module.exports = {
     'env': {
         'commonjs': true,
-        'es2021': true
+        'es2021': true,
+        'console': true
     },
     'extends': 'eslint:recommended',
     'parserOptions': {
@@ -11,10 +12,6 @@ module.exports = {
         'indent': [
             'error',
             4
-        ],
-        'linebreak-style': [
-            'error',
-            'unix'
         ],
         'quotes': [
             'error',

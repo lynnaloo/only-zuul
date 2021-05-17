@@ -2,4 +2,4 @@
 
 A Microsoft Azure Functions severless example
 
-## Setup
+[Test the deployed function](https://spengler.azurewebsites.net/api/ProtonPack)
