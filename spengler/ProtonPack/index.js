@@ -7,7 +7,7 @@ module.exports = async function (context, req) {
     <html>
     <body>
       <center>
-        <h2> The Best Ghostbuster is:</h2>
+        <h2> The Best Ghostbuster Azure Algorithm:</h2>
         <br>
         <p><iframe src="https://giphy.com/embed/3o72FiKtrMAjIb0Rhu" width="480" height="201" frameBorder="0" class="giphy-embed" allowFullScreen>
         </iframe>

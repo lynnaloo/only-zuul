@@ -6,7 +6,7 @@ exports.handler = async (event) => {
       <html>
       <body>
         <center>
-          <h2> The Best Ghostbuster is:</h2>
+          <h2> The Best Ghostbuster AWS Algorithm:</h2>
           <br>
           <p>
             <iframe src="https://giphy.com/embed/l3q2HS9FG81YSdkB2" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen>
