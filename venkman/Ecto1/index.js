@@ -18,8 +18,7 @@ exports.handler = async (event) => {
         <h1>${bestGhostbuster}</h1>
         </marquee></p>
       </body>
-      </html>
-      `;
+      </html>`;
 
     const response = {
         statusCode: 200,
