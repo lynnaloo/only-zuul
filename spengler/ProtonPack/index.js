@@ -7,7 +7,7 @@ module.exports = async function (context, req) {
     <html>
     <body>
       <center>
-        <h1> The Best Ghostbuster is:</h1>
+        <h2> The Best Ghostbuster Azure Algorithm:</h2>
         <br>
         <p><iframe src="https://giphy.com/embed/3o72FiKtrMAjIb0Rhu" width="480" height="201" frameBorder="0" class="giphy-embed" allowFullScreen>
         </iframe>
@@ -17,8 +17,7 @@ module.exports = async function (context, req) {
       <h1>${bestGhostbuster}</h1>
       </marquee>
     </body>
-    </html>
-    `;
+    </html>`;
 
     context.res = {
         status: 200,
